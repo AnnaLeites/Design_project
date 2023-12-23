@@ -78,9 +78,14 @@ const sendDataToPython = async (selectedRoom, inputValue) => {
     //     resolve(result); // Resolve with the entire result for debugging
     //   }
     // });
+
+
+    //spawn
     const { spawn } = require('child_process');
 
-    const pythonProcess = spawn('python3', ['dataProcessor.py', selectedRoom, inputValue]);
+    path = 'python/data_processor.py'
+
+    const pythonProcess = spawn('python3', [path, selectedRoom, inputValue]);
     
     let result = '';
     
