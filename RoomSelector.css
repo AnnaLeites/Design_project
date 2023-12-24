@@ -1,0 +1,37 @@
+/* styles.css */
+
+.room-selector {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+    gap: 10px;
+  }
+  
+  .room-box {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Background colors for each room box */
+  .room-box.bedroom {
+    background-color: #a2c2e2;
+  }
+  
+  .room-box.bathroom {
+    background-color: #b6d7a8;
+  }
+  
+  .room-box.living-room {
+    background-color: #f9d47b;
+  }
+  
+  .room-box.kitchen {
+    background-color: #f0a6ca;
+  }
+  
+  .room-box.office {
+    background-color: #c4b1c7;
+  }
+  
