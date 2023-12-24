@@ -38,7 +38,6 @@ def process_data(selected_room, input_value):
 
 if __name__ == "__main__":
     # Retrieve arguments from command line
-    print("Hello from Python")
     selected_room = sys.argv[1]
     input_value = sys.argv[2]
    
