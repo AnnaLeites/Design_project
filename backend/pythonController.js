@@ -85,7 +85,8 @@ const sendDataToPython = async (selectedRoom, inputValue) => {
 
     path = 'python/data_processor.py'
 
-    const pythonProcess = spawn('python3', [path, selectedRoom, inputValue]);
+    //const pythonProcess = spawn('python3', [path, selectedRoom, inputValue]);
+    const pythonProcess = spawn('/Users/anna/opt/anaconda3/bin/python', [path, selectedRoom, inputValue]);
     
     let result = '';
     
